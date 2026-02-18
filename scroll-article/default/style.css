@@ -1,0 +1,86 @@
+.native-article {
+    position: relative;
+}
+
+.native-marking {
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: #d8e0e6;
+    text-transform: uppercase;
+}
+
+.native-marking::before {
+    display: inline-block;
+    content: 'AD';
+    background: #000;
+    padding: 5px 8px;
+    margin-right: 8px;
+    color: #fff;
+}
+
+.native-article__marking {
+    position: sticky;
+    top: 50px;
+}
+
+.native-article__asset {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.native-article__asset > img,
+.native-article__asset > [data-adk-video] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.native-article__headline {
+    font-family: inherit;
+    margin-bottom: 0.5em;
+}
+
+.native-article__lead {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+}
+
+.native-article__body p,
+.native-article__body ol,
+.native-article__body ul,
+.native-article__body img,
+.native-article__body figure,
+.native-article__body table,
+.native-article__body .adk-box {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.native-article__body p:not(:last-child),
+.native-article__body ol:not(:last-child),
+.native-article__body ul:not(:last-child),
+.native-article__body img:not(:last-child),
+.native-article__body figure:not(:last-child),
+.native-article__body table:not(:last-child),
+.native-article__body .adk-box:not(:last-child) {
+    margin: 0 0 var(--spacing) 0;
+}
+
+@media (min-width: 576px) {
+    .native-article__text {
+        width: 80%;
+        margin: var(--spacing) auto 0 auto;
+    }
+}
+
+.adk-body h2 {
+    font-family: inherit;
+}
+
+.adk-box {
+    padding: var(--spacing);
+    background: #dce4eb;
+}

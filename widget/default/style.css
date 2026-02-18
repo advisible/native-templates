@@ -1,0 +1,67 @@
+.native-teaser {
+    --background-color: transparent;
+    --marking-color: #000;
+    --headline-color: #000;
+    --lead-color: #000;
+    --advertiser-color: #2791c1;
+}
+
+@media (prefers-color-scheme: dark) {
+    .native-teaser {
+        --background-color: transparent;
+        --marking-color: #fff;
+        --headline-color: #fff;
+        --lead-color: #fff;
+        --advertiser-color: #2791c1;
+    }
+}
+
+.native-teaser {
+    background: var(--background-color);
+    display: block;
+    height: 100%;
+}
+
+.native-teaser__marking {
+    font-size: 10px;
+    color: var(--marking-color);
+    padding: 0 0 1px 2px;
+    letter-spacing: 0.5px;
+}
+
+.native-teaser__asset {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.native-teaser__asset > img,
+.native-teaser__asset > [data-adk-video] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.native-teaser__advertiser {
+    color: var(--advertiser-color);
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.native-teaser__headline {
+    font-family: inherit;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 600;
+    color: var(--headline-color);
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+
+.native-teaser__lead {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--lead-color);
+    line-height: 1.4;
+}
