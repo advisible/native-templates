@@ -1,12 +1,9 @@
 # Advisible Native templates
 
-Creatives can be styled any way you want and
-
-The design of native ads can be split into layout and styling. Layout
-
-- Outer layout - how creatives are positioned in the page.
-- Inner layout – the structure of the elements in the creative.
-- Styling - the colors, fonts and borders etc.
+Designing native ads can be split into three parts:
+- outer layout – how creatives are positioned in the page,
+- inner layout – structure of the elements in the creative, and
+- styling – colors, fonts and borders etc.
 
 ## Outer layout
 `adk-container`
